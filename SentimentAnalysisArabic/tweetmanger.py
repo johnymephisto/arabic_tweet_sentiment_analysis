@@ -8,7 +8,7 @@ class TweetManager(object):
 
     def __init__(self):
         config = configparser.ConfigParser()
-        config.read('SentimentAnalysisArabic/config.ini')
+        config.read('config.ini')
 
         # config.read('config.ini')
 
@@ -23,9 +23,6 @@ class TweetManager(object):
 
         return pd.DataFrame(data, columns=['created_at', 'tweet'])
 
-    def get_tweets_dummy(self, query, result_type, count, lang='ar'):
-        return pd.read_csv('download.csv')
-
 
 def main():
     """
@@ -33,7 +30,6 @@ def main():
     """
     df = TweetManager().get_tweets_dummy('corona', count=100, result_type='popular')
     df
-
 
 if __name__ == '__main__':
     main()
