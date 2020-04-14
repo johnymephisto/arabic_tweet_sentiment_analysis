@@ -1,5 +1,7 @@
 # Arabic Tweet Hashtag Sentiment Analysis
 
+Project done as Freelancer
+
 ## Modules 
 ### Data Used for training
 
